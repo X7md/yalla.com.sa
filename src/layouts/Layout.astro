@@ -5,21 +5,33 @@ import Footer from '../components/Footer.astro';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta name="description" content="يلا" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Logo.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Positivus</title>
+    <title>يلا للتسويق</title>
     <meta
       name="description"
-      content="A beautiful and functional landing page design created specifically for digital marketing agencies. With its clean and modern design, Positivus is the perfect template to showcase your agency's services and case studies to potential clients. Built with astro and tailwindcss"
+      content="شركة يلا بلان للتسويق المحدودة"
     />
-	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <style>  
+    @font-face {
+      font-family: 'TheYearofTheCamel';
+      font-style: normal;
+      src: url('/TheYearofTheCamel-Medium.otf'),
+          url('/TheYearofTheCamel-ExtraLight.otf') weight 100,
+          url('/TheYearofTheCamel-Thin.otf') weight 200,
+          url('/TheYearofTheCamel-Light.otf') weight 300,
+          /* url('/TheYearofTheCamel-Medium.otf') weight 500, */
+          url('/TheYearofTheCamel-Bold.otf') weight 700,
+          url('/TheYearofTheCamel-ExtraBold.otf') weight 800;
+    }
+    </style>
   </head>
-  <body class="bg-white font-SpaceGrotesk space-y-20">
+  <body class="bg-white space-y-20">
     <Navbar />
     <slot />
     <Footer/>
